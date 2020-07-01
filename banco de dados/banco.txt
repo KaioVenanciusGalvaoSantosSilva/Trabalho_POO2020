@@ -1,0 +1,13 @@
+IMPORTA O saude.sql para o banco de dados em vez de usar os comandos abaixo
+
+Ligar o adm do mysql.
+Entrar no terminal 
+logar como admin e digite os comandos a seguir
+
+mysql -u root -p
+enter
+
+
+
+
+

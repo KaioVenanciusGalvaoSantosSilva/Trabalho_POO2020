@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/classmate-1.3.4.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-validator-6.1.5.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-validator-annotation-processor-6.1.5.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-validator-cdi-6.1.5.Final.jar"/>
+	<classpathentry kind="lib" path="lib/jakarta.el-3.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/jakarta.validation-api-2.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/jboss-logging-3.3.2.Final.jar"/>
+	<classpathentry kind="lib" path="lib/mariadb-java-client-2.6.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,21 @@
+Ligar o adm do mysql.
+Entrar no terminal 
+logar como admin e digite os comandos a seguir
+
+mysql -u root -p
+enter
+
+CREATE database saude;
+CREATE TABLE `saude`.`fornecedor` ( `idFornecedor` INT(11) NOT NULL AUTO_INCREMENT , `nomeFornecedor` VARCHAR(50) NOT NULL , `CNPJFornecedor` VARCHAR(14) NOT NULL , `emailFornecedor` VARCHAR(35) NOT NULL , `telefoneFornecedor` INT(11) NOT NULL , `CEPFornecedor` INT(11) NOT NULL , `enderecoFornecedor` VARCHAR(40) NOT NULL , `numeroEndereco` INT(11) NOT NULL , `complementoEndereco` VARCHAR(40) NOT NULL , PRIMARY KEY (`idFornecedor`)) ENGINE = InnoDB;
+
+CREATE TABLE `saude`.`estoque` ( `idProduto` INT NOT NULL AUTO_INCREMENT , `nomeProduto` VARCHAR(50) NOT NULL , `Lote` VARCHAR(30) NOT NULL , `valorTotal` DOUBLE NOT NULL , `quantidade` INT(50) NOT NULL , `dataEntrada` DATE NOT NULL , `dataValidade` DATE NOT NULL , PRIMARY KEY (`idProduto`)) ENGINE = InnoDB;
+
+CREATE TABLE `saude`.`login` ( `idUsuario` INT NOT NULL AUTO_INCREMENT , `usuario` INT(50) NOT NULL , `senha` VARCHAR(30) NOT NULL , `cargo` VARCHAR(30) NOT NULL , PRIMARY KEY (`idUsuario`)) ENGINE = InnoDB;
+
+CREATE TABLE `saude`.`cliente` ( `idCliente` INT(11) NOT NULL AUTO_INCREMENT , `nomeCliente` VARCHAR(50) NOT NULL , `CPFCliente` VARCHAR(11) NOT NULL , `emailCliente` VARCHAR(35) NOT NULL , `telefoneCliente` INT(11) NOT NULL , `CEPCliente` INT(11) NOT NULL , `enderecoCliente` VARCHAR(40) NOT NULL , `numeroEndereco` INT(11) NOT NULL , `complementoEndereco` VARCHAR(40) NOT NULL , PRIMARY KEY (`idCliente`)) ENGINE = InnoDB;
+
+
+
+
+
+
