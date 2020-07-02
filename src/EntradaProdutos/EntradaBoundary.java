@@ -43,7 +43,7 @@ public class EntradaBoundary extends Application implements EventHandler<ActionE
 	@SuppressWarnings("unchecked")
 	public void generateTable() {
 		TableColumn<EntityEntrada, String> colNomeProduto = new TableColumn<>("Produto");
-		colNomeProduto.setCellValueFactory(new PropertyValueFactory<EntityEntrada, String>("nomeProd"));
+		colNomeProduto.setCellValueFactory(new PropertyValueFactory<EntityEntrada, String>("nomeProduto"));
 
 		TableColumn<EntityEntrada, String> colNomeFornecedor = new TableColumn<>("Fornecedor");
 		colNomeFornecedor.setCellValueFactory(new PropertyValueFactory<EntityEntrada, String>("nomeFornecedor"));
@@ -77,6 +77,7 @@ public class EntradaBoundary extends Application implements EventHandler<ActionE
 			public void changed(ObservableValue<? extends EntityEntrada> Produto, EntityEntrada antigo,
 					EntityEntrada novo) {
 				entityToBoundary(novo);
+				
 			}
 		});
 	}
