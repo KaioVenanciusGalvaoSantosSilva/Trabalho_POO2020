@@ -44,7 +44,7 @@ public class EntradaControl {
 			for (ConstraintViolation<EntityEntrada> erro : erros) {
 				msgErros += erro.getMessage() + "\n";
 			}
-			alert(AlertType.ERROR, "Produto", "ERRO: Não foi possivel cadastrar o entrada", msgErros);
+			alert(AlertType.ERROR, "Produto", "ERRO: Não foi possivel cadastrar a entrada", msgErros);
 		}
 	}
 

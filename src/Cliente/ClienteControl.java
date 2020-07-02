@@ -34,12 +34,14 @@ public class ClienteControl {
 
 	public void adicionar(EntityCliente cliente) { 
 		Set<ConstraintViolation<EntityCliente>> erros = validator.validate(cliente);
+		
 		if (erros.isEmpty()) { 
 			ClienteDAO.adicionar(cliente);
 			alert(AlertType.INFORMATION, "Farmacia", null, 
 					"Cliente " + cliente.getNomeCliente() + " cadastrado com sucesso");
 			pesquisarPorNome("");
-		} else { 
+		} else {
+
 			String msgErros = "Erros: \n";
 			for (ConstraintViolation<EntityCliente> erro : erros ) { 
 				msgErros +=  erro.getMessage() + "\n";

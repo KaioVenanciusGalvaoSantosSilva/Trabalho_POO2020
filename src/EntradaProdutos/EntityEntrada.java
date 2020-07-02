@@ -50,7 +50,7 @@ public class EntityEntrada implements Comparable<EntityEntrada> {
 		this.nomeFornecedor = nomeFornecedor;
 	}
 
-	@NotBlank(message = "Insira o e-mail ")
+	@NotBlank(message = "Insira o Lote ")
 	public String getLote() {
 		return lote;
 	}
@@ -75,7 +75,7 @@ public class EntityEntrada implements Comparable<EntityEntrada> {
 		this.quantidade = quantidade;
 	}
 
-	@PastOrPresent(message = "esta data deve estar no passado ou presente")
+	@PastOrPresent(message = "Esta data deve estar no passado ou presente")
 	public LocalDate getDataEntrada() {
 		return dataEntrada;
 	}
